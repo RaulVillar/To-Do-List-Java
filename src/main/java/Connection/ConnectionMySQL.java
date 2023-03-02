@@ -1,4 +1,5 @@
 package Connection;
+import javax.swing.*;
 import java.sql.Connection;
 import java.sql.DriverManager;
 
@@ -16,7 +17,7 @@ public class ConnectionMySQL {
             System.out.println("Connected to the database taskDataBase");
         }
         catch (Exception e) {
-            System.out.println(e.toString());
+            JOptionPane.showMessageDialog(null, "Error al conectarse" + e.toString());
         }
         return con;
     }
