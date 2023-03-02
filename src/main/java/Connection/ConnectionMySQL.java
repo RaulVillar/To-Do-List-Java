@@ -4,7 +4,6 @@ import java.sql.DriverManager;
 
 
 public class ConnectionMySQL {
-
     public static Connection getConnection(){
         Connection con = null;
         String name = "root";
