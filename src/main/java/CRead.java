@@ -2,7 +2,7 @@ import javax.swing.*;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
-public class CRead extends CTask {
+public class CRead extends CMethods {
     public void ReadTasks(JList paramTaskList) {
 
         DefaultListModel model = new DefaultListModel();

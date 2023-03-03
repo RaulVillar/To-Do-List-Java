@@ -1,8 +1,10 @@
 import javax.swing.*;
+import javax.swing.event.ListSelectionEvent;
+import javax.swing.event.ListSelectionListener;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class taskList extends JFrame {
+public class CForm extends JFrame {
     public JPanel taskForm;
     public JTextField taskTextField;
     public JTextField descriptionTextField;
@@ -10,7 +12,6 @@ public class taskList extends JFrame {
     public JButton addButton;
     public JButton deleteButton;
     public JButton updateButton;
-    public JButton exitButton;
     private JList taskList;
 
     public JPanel getMainPanel() {
@@ -25,7 +26,7 @@ public class taskList extends JFrame {
         reader.ReadTasks(taskList);
     }
 
-    public taskList() {
+    public CForm() {
         super("To-Do List");
         setContentPane(taskForm);
 
@@ -39,13 +40,6 @@ public class taskList extends JFrame {
             }
         });
 
-        exitButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                dispose();
-                System.exit(0);
-            }
-        });
         deleteButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -53,6 +47,22 @@ public class taskList extends JFrame {
                 delete.DeleteTask(idTextField);
                 CRead reader = new CRead();
                 reader.ReadTasks(taskList);
+            }
+        });
+        updateButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                CUpdate update = new CUpdate();
+                update.UpdateTask(idTextField, taskTextField, descriptionTextField);
+                CRead reader = new CRead();
+                reader.ReadTasks(taskList);
+            }
+        });
+
+        taskList.addListSelectionListener(new ListSelectionListener() {
+            @Override
+            public void valueChanged(ListSelectionEvent e) {
+
             }
         });
     }

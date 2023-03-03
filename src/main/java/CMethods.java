@@ -1,5 +1,5 @@
 
-public class CTask extends taskList {
+public class CMethods extends CForm {
     private int id;
     private String name;
     private String description;
@@ -27,4 +27,5 @@ public class CTask extends taskList {
     public void setDescription(String description) {
         this.description = description;
     }
+
 }

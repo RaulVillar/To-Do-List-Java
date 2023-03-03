@@ -1,15 +1,15 @@
 import javax.swing.*;
 import java.sql.CallableStatement;
 
-public class CDelete extends CTask {
+public class CDelete extends CMethods {
 
-    public void DeleteTask(JTextField paramIdTextField) {
+    public void DeleteTask(JTextField paramTaskId) {
 
-        setId(Integer.parseInt(paramIdTextField.getText()));
+        setId(Integer.parseInt(paramTaskId.getText()));
 
         CConnection con = new CConnection();
 
-        String consult = "DELETE FROM `taskslist` WHERE taskslist.taskID = ?";
+        String consult = "DELETE FROM taskslist WHERE taskslist.taskID = ?";
 
         try {
             CallableStatement cs = con.Connection().prepareCall(consult);
