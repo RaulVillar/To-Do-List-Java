@@ -1,2 +1,5 @@
-public class CShow {
+public class CShow extends CTask{
+    public void ShowTasks() {
+
+    }
 }

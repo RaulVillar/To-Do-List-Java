@@ -11,6 +11,7 @@ public class taskList extends JFrame{
  public JButton deleteButton;
  public JButton updateButton;
  public JButton exitButton;
+ private JList taskList;
 
  public JPanel getMainPanel() {
   return taskForm;
@@ -37,7 +38,8 @@ public class taskList extends JFrame{
   deleteButton.addActionListener(new ActionListener() {
    @Override
    public void actionPerformed(ActionEvent e) {
-
+  CDelete delete = new CDelete();
+  delete.DeleteTask(idTextField);
    }
   });
  }

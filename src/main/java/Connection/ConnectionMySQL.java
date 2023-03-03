@@ -17,7 +17,7 @@ public class ConnectionMySQL {
             System.out.println("Connected to the database taskDataBase");
         }
         catch (Exception e) {
-            JOptionPane.showMessageDialog(null, "Error al conectarse" + e.toString());
+            JOptionPane.showMessageDialog(null, "Could not connect to the database" + e.toString());
         }
         return con;
     }

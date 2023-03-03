@@ -1,6 +1,4 @@
-import javax.swing.*;
-
-public class Main {
+public class CMain {
         public static void main(String[] args) {
 
             CMainPanel myTask = new CMainPanel();
