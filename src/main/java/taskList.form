@@ -74,15 +74,6 @@
           <text value="Update"/>
         </properties>
       </component>
-      <component id="b83de" class="javax.swing.JLabel">
-        <constraints>
-          <grid row="2" column="0" row-span="2" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <labelFor value="1d906"/>
-          <text value="Description"/>
-        </properties>
-      </component>
       <component id="f2b7c" class="javax.swing.JButton" binding="exitButton" default-binding="true">
         <constraints>
           <grid row="3" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
@@ -91,13 +82,22 @@
           <text value="Exit"/>
         </properties>
       </component>
-      <component id="3fa2d" class="javax.swing.JList" binding="taskList">
+      <component id="59fc0" class="javax.swing.JList" binding="taskList">
         <constraints>
           <grid row="0" column="5" row-span="4" col-span="1" vsize-policy="6" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="50"/>
           </grid>
         </constraints>
         <properties/>
+      </component>
+      <component id="b83de" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <labelFor value="1d906"/>
+          <text value="Description"/>
+        </properties>
       </component>
     </children>
   </grid>

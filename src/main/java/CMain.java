@@ -1,9 +1,9 @@
 public class CMain {
-        public static void main(String[] args) {
+    public static void main(String[] args) {
 
-            CMainPanel myTask = new CMainPanel();
+        CMainPanel myTask = new CMainPanel();
 
-        }
     }
+}
 
 
