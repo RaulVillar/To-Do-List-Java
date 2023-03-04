@@ -19,3 +19,5 @@ Este proyecto realizado en Java es una To-Do List que nos permite visualizar, a�
 
 <img width="878" alt="Diagram of the proyect" src="https://github.com/RaulVillar/To-Do-List-Java/blob/main/Diagram/Diagrama%20CRUD%20(TDL).png">
 
+| [<img src="https://avatars.githubusercontent.com/u/119947896?v=4" width=115><br><sub>Lucía Tirado Turiel</sub>](https://github.com/Luciatt)| [<img src="https://avatars.githubusercontent.com/u/119669918?v=4" width=115><br><sub>Raúl Villar</sub>](https://github.com/RaulVillar)|
+| :---: | :---: | 
