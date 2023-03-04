@@ -17,5 +17,5 @@ Este proyecto realizado en Java es una To-Do List que nos permite visualizar, a√
 </ul>
 <h2>3. Diagrama del proyecto</h2>
 
-<img width="878" alt="Diagram of the proyect" src="(https://github.com/RaulVillar/To-Do-List-Java/blob/main/Diagram/Diagrama%20CRUD%20(TDL).png)">
+<img width="878" alt="Diagram of the proyect" src="https://github.com/RaulVillar/To-Do-List-Java/blob/main/Diagram/Diagrama%20CRUD%20(TDL).png">
 
