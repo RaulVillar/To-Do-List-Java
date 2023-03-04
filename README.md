@@ -12,8 +12,8 @@ Este proyecto realizado en Java es una To-Do List que nos permite visualizar, a�
 </ul>
 <h2>2. Requerimientos</h2>
 <ul>
-<li>Abrir la aplicaci처n en IntelliJ y compilar el proyecto</li>
-<li>Disponer de una tabla generada en un servidor mediante XAMPP u otro programa de gesti처n de bases de datos relacionales (modificar los datos de conexi처n en la clase ConnectionMySQL o crear una nueva clase y modificar CConnection)</li>
+<li>Abrir la aplicaci처n en IntelliJ y compilar el proyecto.</li>
+<li>Disponer de una tabla generada en un servidor mediante XAMPP u otro programa de gesti처n de bases de datos relacionales (modificar los datos de conexi처n en la clase ConnectionMySQL o crear una nueva clase y modificar CConnection).</li>
 </ul>
 <h2>3. Diagrama del proyecto</h2>
 https://github.com/RaulVillar/To-Do-List-Java/blob/main/Diagram/Diagrama%20CRUD%20(TDL).png
