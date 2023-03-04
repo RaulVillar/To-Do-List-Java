@@ -3,6 +3,8 @@ import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 
 public class CForm extends JFrame {
     public JPanel taskForm;
@@ -16,14 +18,6 @@ public class CForm extends JFrame {
 
     public JPanel getMainPanel() {
         return taskForm;
-    }
-
-    public void MyForm() {
-        taskList = new JList();
-        taskList.setBounds(10, 10, 500, 300);
-        add(taskList);
-        CRead reader = new CRead();
-        reader.ReadTasks(taskList);
     }
 
     public CForm() {
@@ -59,10 +53,19 @@ public class CForm extends JFrame {
             }
         });
 
-        taskList.addListSelectionListener(new ListSelectionListener() {
+        String[] items = {"A", "B", "C"};
+        JList list = new JList(items);
+        taskList.addMouseListener(new MouseAdapter() {
             @Override
-            public void valueChanged(ListSelectionEvent e) {
+            public void mouseClicked(MouseEvent e) {
+                JList list = (JList)e.getSource();
+                if (e.getClickCount() == 2) {
 
+                    int index = list.locationToIndex(e.getPoint());
+                } else if (e.getClickCount() == 3) {
+
+                    int index = list.locationToIndex(e.getPoint());
+                }
             }
         });
     }

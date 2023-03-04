@@ -3,6 +3,9 @@ import java.sql.CallableStatement;
 import javax.swing.JOptionPane;
 
 public class CInsert extends CMethods {
+    public CInsert() {
+        super();
+    }
 
     public void InsertTask(JTextField paramTaskName, JTextField paramTaskDescription) {
 

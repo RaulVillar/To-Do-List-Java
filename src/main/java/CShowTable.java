@@ -6,7 +6,7 @@ public class CShowTable extends CForm {
         idTextField.setEnabled(false);
         JPanel mainPanel = getMainPanel();
         JFrame frame = new CForm();
-        frame.setSize(500, 300);
+        frame.setSize(500, 400);
         frame.setVisible(true);
     }
 }

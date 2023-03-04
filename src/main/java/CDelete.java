@@ -19,7 +19,7 @@ public class CDelete extends CMethods {
             JOptionPane.showMessageDialog(null, "It was deleted correctly");
 
         } catch (Exception e) {
-            JOptionPane.showMessageDialog(null, "It could not be deleted" + e.toString());
+            JOptionPane.showMessageDialog(null, "It couldn't be deleted" + e.toString());
         }
     }
 }
