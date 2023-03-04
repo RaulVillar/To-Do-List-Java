@@ -17,5 +17,4 @@ Este proyecto realizado en Java es una To-Do List que nos permite visualizar, a√
 </ul>
 <h2>3. Diagrama del proyecto</h2>
 ![Diagrama CRUD (TDL)](https://user-images.githubusercontent.com/119669918/222927843-7a54d4e7-af71-4063-b395-f50f5fc5b1dd.png)
-![Diagrama CRUD (TDL) (1)](https://user-images.githubusercontent.com/119669918/222927920-e296e01d-8daf-4ba8-9cc5-1d47f87a7b95.png)
-![Diagrama CRUD (TDL)](https://user-images.githubusercontent.com/119669918/222927923-5094125c-e3f6-4540-85c8-be2d7f36d3bf.jpeg)
+
