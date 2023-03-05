@@ -12,9 +12,14 @@ Este proyecto realizado en Java es una To-Do List que nos permite visualizar, a�
 </ul>
 <h2>2. Requerimientos</h2>
 <ul>
-<li>Abrir la aplicación en IntelliJ y compilar el proyecto</li>
-<li>Disponer de una tabla generada en un servidor mediante XAMPP u otro programa de gestión de bases de datos relacionales (modificar los datos de conexión en la clase ConnectionMySQL o crear una nueva clase y modificar CConnection)</li>
+<li>Abrir la aplicación en IntelliJ y compilar el proyecto.</li>
+<li>Disponer de una tabla generada en un servidor mediante XAMPP u otro programa de gestión de bases de datos relacionales (modificar los datos de conexión en la clase ConnectionMySQL o crear una nueva clase y modificar CConnection).</li>
 </ul>
 <h2>3. Diagrama del proyecto</h2>
-![Diagrama CRUD (TDL)](https://user-images.githubusercontent.com/119669918/222927843-7a54d4e7-af71-4063-b395-f50f5fc5b1dd.png)
 
+<img width="878" alt="Diagram of the proyect" src="https://github.com/RaulVillar/To-Do-List-Java/blob/main/Diagram/Diagrama%20CRUD%20(TDL).png">
+
+<h2>4. Desarrolladores</h2>
+
+| [<img src="https://avatars.githubusercontent.com/u/119872787?v=4" width=115><br><sub>Lucía Tirado Turiel</sub>](https://github.com/Luciatt)| [<img src="https://avatars.githubusercontent.com/u/119669918?v=4" width=115><br><sub>Raúl Villar</sub>](https://github.com/RaulVillar)|
+| :---: | :---: | 
