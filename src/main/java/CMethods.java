@@ -1,4 +1,3 @@
-import java.sql.Connection;
 
 public class CMethods extends CForm {
     private int id;
@@ -28,6 +27,8 @@ public class CMethods extends CForm {
     public void setDescription(String description) {
         this.description = description;
     }
+
+    CConnection con = new CConnection();
     public void Connect() {
         CConnection con = new CConnection ();
         con.Connection();

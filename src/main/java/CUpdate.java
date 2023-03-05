@@ -10,7 +10,7 @@ public class CUpdate extends CMethods {
 
         String consult = "UPDATE taskslist SET taskName = ?, taskDescription = ? WHERE taskID = ?";
 
-        CConnection con = new CConnection();
+        Connect();
 
         if (!paramTaskName.getText().isEmpty() && !paramTaskDescription.getText().isEmpty()) {
             try {

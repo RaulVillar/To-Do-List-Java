@@ -3,15 +3,12 @@ import java.sql.CallableStatement;
 import javax.swing.JOptionPane;
 
 public class CInsert extends CMethods {
-    public CInsert() {
-        super();
-    }
 
     public void InsertTask(JTextField paramTaskName, JTextField paramTaskDescription) {
 
         String consult = "INSERT INTO `taskslist` (taskName, taskDescription) values (?,?)";
 
-        CConnection con = new CConnection();
+        Connect();
 
         if (!paramTaskName.getText().isEmpty() && !paramTaskDescription.getText().isEmpty()) {
 

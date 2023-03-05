@@ -1,7 +1,8 @@
 public class CMain {
     public static void main(String[] args) {
 
-        CShowTable myTask = new CShowTable();
+        CForm objectTable = new CForm();
+        objectTable.CShowTable();
 
     }
 }

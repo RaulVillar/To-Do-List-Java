@@ -7,7 +7,7 @@ public class CDelete extends CMethods {
 
         setId(Integer.parseInt(paramTaskId.getText()));
 
-        CConnection con = new CConnection();
+        Connect();
 
         String consult = "DELETE FROM taskslist WHERE taskslist.taskID = ?";
 

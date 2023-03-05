@@ -1,6 +1,4 @@
 import javax.swing.*;
-import javax.swing.event.ListSelectionEvent;
-import javax.swing.event.ListSelectionListener;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
@@ -14,10 +12,15 @@ public class CForm extends JFrame {
     public JButton addButton;
     public JButton deleteButton;
     public JButton updateButton;
-    private JList taskList;
+    public JList taskList;
+    private JButton readButton;
 
-    public JPanel getMainPanel() {
-        return taskForm;
+    public void CShowTable() {
+
+        this.setSize(730, 400);
+        this.setVisible(true);
+        this.setLocationRelativeTo(null);
+        idTextField.setEnabled(false);
     }
 
     public CForm() {
@@ -53,19 +56,20 @@ public class CForm extends JFrame {
             }
         });
 
-        String[] items = {"A", "B", "C"};
-        JList list = new JList(items);
+        readButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                CRead reader = new CRead();
+                reader.ReadTasks(taskList);
+            }
+        });
+
         taskList.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                JList list = (JList)e.getSource();
-                if (e.getClickCount() == 2) {
-
-                    int index = list.locationToIndex(e.getPoint());
-                } else if (e.getClickCount() == 3) {
-
-                    int index = list.locationToIndex(e.getPoint());
-                }
+                super.mouseClicked(e);
+                CSelection select = new CSelection();
+                select.selectTask(taskList, idTextField, taskTextField, descriptionTextField);
             }
         });
     }
