@@ -12,15 +12,15 @@ public class CForm extends JFrame {
     public JButton addButton;
     public JButton deleteButton;
     public JButton updateButton;
-    public JList taskList;
+    public JList<CMethods> taskList;
     private JButton readButton;
+
 
     public void CShowTable() {
 
         this.setSize(730, 400);
         this.setVisible(true);
         this.setLocationRelativeTo(null);
-        idTextField.setEnabled(false);
     }
 
     public CForm() {

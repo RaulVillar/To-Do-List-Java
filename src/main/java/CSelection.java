@@ -2,8 +2,7 @@ import javax.swing.*;
 
 public class CSelection extends CMethods {
 
-    public void selectTask(JList<CMethods> paramTaskList, JTextField paramTaskId, JTextField paramTaskName, JTextField paramTaskDescription) {
-
+    public void selectTask(JList <CMethods> paramTaskList, JTextField paramTaskId, JTextField paramTaskName, JTextField paramTaskDescription) {
 
         try {
 
