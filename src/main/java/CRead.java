@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
@@ -9,7 +10,7 @@ public class CRead extends CMethods {
 
         paramTaskList.setModel(model);
 
-        CConnection con = new CConnection();
+        Connect();
         try {
             Statement stmt = con.Connection().createStatement();
             ResultSet rs = stmt.executeQuery("SELECT * FROM taskslist");
