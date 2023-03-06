@@ -10,8 +10,6 @@ public class CUpdate extends CMethods {
 
         String consult = "UPDATE taskslist SET taskName = ?, taskDescription = ? WHERE taskID = ?";
 
-        Connect();
-
         if (!paramTaskName.getText().isEmpty() && !paramTaskDescription.getText().isEmpty()) {
             try {
                 CallableStatement cs = con.Connection().prepareCall(consult);
@@ -27,6 +25,5 @@ public class CUpdate extends CMethods {
         } else {
             JOptionPane.showMessageDialog(null, "You must add text");
         }
-
     }
 }

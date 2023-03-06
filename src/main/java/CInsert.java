@@ -8,8 +8,6 @@ public class CInsert extends CMethods {
 
         String consult = "INSERT INTO `taskslist` (taskName, taskDescription) values (?,?)";
 
-        Connect();
-
         if (!paramTaskName.getText().isEmpty() && !paramTaskDescription.getText().isEmpty()) {
 
             try {

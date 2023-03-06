@@ -10,7 +10,6 @@ public class CRead extends CMethods {
 
         paramTaskList.setModel(model);
 
-        Connect();
         try {
             Statement stmt = con.Connection().createStatement();
             ResultSet rs = stmt.executeQuery("SELECT * FROM taskslist");
